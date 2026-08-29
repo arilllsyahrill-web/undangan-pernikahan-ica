@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Wedding of Fikri & Icaa</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f6f0;
+      color: #4a4a4a;
+      text-align: center;
+    }
+
+    /* Cover / Header Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                  url('c:\\web ke dua\\Fikri-Icaa-18.jpeg') center/cover;
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    .hero h3 {
+      font-weight: 300;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-family: 'Georgia', serif;
+      margin-bottom: 20px;
+    }
+
+    .guest-box {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      padding: 15px 25px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Georgia', serif;
+      color: #8b7d6b;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    /* Couple Section */
+    .couple {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .profile {
+      flex: 1 1 250px;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #8b7d6b;
+    }
+
+    /* Event Details */
+    .event-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      margin: 20px 0;
+    }
+
+    /* Countdown Timer */
+    .timer {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .timer-box {
+      background: #8b7d6b;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 6px;
+      min-width: 65px;
+    }
+
+    .timer-box span {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: #2c2c2c;
+      color: #888;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    button {
+      background-color: #8b7d6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #6f6354;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="weddingMusic" loop>
+    <source src="c:\web ke dua\Rizky Febian - Hingga Tua Bersama [Official Music Video].mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="hero">
+    <h3>The Wedding of</h3>
+    <h1>Fikri & Icaa</h1>
+    <p>Sabtu, 29 Agustus 2026</p>
+    
+    <div class="guest-box">
+      <p>Kepada Yth. Bapak/Ibu/Saudara/i:</p>
+      <h4 id="guestName">Keluarga Besar Aki Shaleh</h4>
+    </div>
+    
+    <button onclick="playMusic()">Buka Undangan</button>
+  </div>
+
+  <section>
+    <h2>Pasangan Mempelai</h2>
+    <p>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Dengan memohon rahmat-Nya, kami bermaksud menyelenggarakan pernikahan kami:</p>
+    
+    <div class="couple">
+      <div class="profile">
+        <img src="c:\web ke dua\fikri.jpeg" alt="Fikri" />
+        <h3>Fikri</h3>
+        <p>Putra dari Bapak Indra wahyudin ( kobra )
+& Ibu Ebah suebah ( Ebah)</p>
+      </div>
+      <div class="profile">
+        <img src="c:\web ke dua\ica.jpeg" alt="Icaa" />
+        <h3>Icaa</h3>
+        <p>Putri dari Bapak Suherman (Herman)
+& Ibu Enyi siti rohmah (Enyi)</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Rangkaian Acara</h2>
+    
+    <div class="event-card">
+      <h3>Akad Nikah</h3>
+      <p>Pukul: 08.00 WIB - Selesai</p>
+      <p>Lokasi: Kp. Nenggeng RT02 RW09 Desa cijengkol Kec. Caringin Sukabumi </p>
+    </div>
+
+    <div class="event-card">
+      <h3>Resepsi</h3>
+      <p>Pukul: 11.00 WIB - 14.00 WIB</p>
+      <p>Lokasi: Kp. Nenggeng RT02 RW09 Desa cijengkol Kec. Caringin Sukabumi </p>
+    </div>
+
+    <h3 style="margin-top: 40px;">Hitung Mundur Acara</h3>
+    <div class="timer">
+      <div class="timer-box"><span id="days">0</span>Hari</div>
+      <div class="timer-box"><span id="hours">0</span>Jam</div>
+      <div class="timer-box"><span id="minutes">0</span>Menit</div>
+      <div class="timer-box"><span id="seconds">0</span>Detik</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Terima Kasih Atas Doa & Restu Anda</p>
+    <p>&copy; 2026 Fikri & Icaa Wedding</p>
+  </footer>
+
+  <script>
+    // 1. Ambil Nama Tamu dari URL Parameter (?to=Nama)
+    const urlParams = new URLSearchParams(window.location.search);
+    const guestParam = urlParams.get('to');
+    if (guestParam) {
+      document.getElementById('guestName').innerText = decodeURIComponent(guestParam);
+    }
+
+    // 2. Kontrol Musik
+    function playMusic() {
+      const music = document.getElementById('weddingMusic');
+      music.play();
+      window.scrollTo({
+        top: window.innerHeight,
+        behavior: 'smooth'
+      });
+    }
+
+    // 3. Logika Hitung Mundur (Countdown)
+    const targetDate = new Date("Aug 29, 2026 08:00:00").getTime();
+
+    setInterval(function() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance > 0) {
+        document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+        document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
